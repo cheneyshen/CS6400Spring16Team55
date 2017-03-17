@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFC18ADC-C3B9-45A6-B5AF-020C5D9A19A4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>P3</RootNamespace>
+    <AssemblyName>P3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTool.Designer.cs">
+      <DependentUpon>AddTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAvailability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckAvailability.Designer.cs">
+      <DependentUpon>CheckAvailability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClerkMainMenu.Designer.cs">
+      <DependentUpon>ClerkMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProfile.Designer.cs">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMainMenu.Designer.cs">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DropOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropOff.Designer.cs">
+      <DependentUpon>DropOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateReports.Designer.cs">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeReservation.Designer.cs">
+      <DependentUpon>MakeReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickUp.Designer.cs">
+      <DependentUpon>PickUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Utility.cs" />
+    <Compile Include="RentalContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalContract.Designer.cs">
+      <DependentUpon>RentalContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalReceipt.Designer.cs">
+      <DependentUpon>RentalReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report3Form.Designer.cs">
+      <DependentUpon>Report3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report2Form.Designer.cs">
+      <DependentUpon>Report2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report1Form.Designer.cs">
+      <DependentUpon>Report1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationFinal.Designer.cs">
+      <DependentUpon>ReservationFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationSummary.Designer.cs">
+      <DependentUpon>ReservationSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellTool.Designer.cs">
+      <DependentUpon>SellTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceOrderRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceOrderRequest.Designer.cs">
+      <DependentUpon>ServiceOrderRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="team55_dbDataSet.cs">
+      <DependentUpon>team55_dbDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="team55_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>team55_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddTool.resx">
+      <DependentUpon>AddTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckAvailability.resx">
+      <DependentUpon>CheckAvailability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClerkMainMenu.resx">
+      <DependentUpon>ClerkMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProfile.resx">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMainMenu.resx">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropOff.resx">
+      <DependentUpon>DropOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateReports.resx">
+      <DependentUpon>GenerateReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeReservation.resx">
+      <DependentUpon>MakeReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickUp.resx">
+      <DependentUpon>PickUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RentalContract.resx">
+      <DependentUpon>RentalContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalReceipt.resx">
+      <DependentUpon>RentalReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3Form.resx">
+      <DependentUpon>Report3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2Form.resx">
+      <DependentUpon>Report2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1Form.resx">
+      <DependentUpon>Report1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="ReservationFinal.resx">
+      <DependentUpon>ReservationFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationSummary.resx">
+      <DependentUpon>ReservationSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellTool.resx">
+      <DependentUpon>SellTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceOrderRequest.resx">
+      <DependentUpon>ServiceOrderRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="team55_dbDataSet.xsc">
+      <DependentUpon>team55_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="team55_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>team55_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="team55_dbDataSet.xss">
+      <DependentUpon>team55_dbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Demo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

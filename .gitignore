@@ -1,0 +1,23 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+Project3/Project3/Project3.csproj.user
+Project3/Project3/bin/
+Project3/Project3/obj/
+Project3/Project3.sln.GhostDoc.xml
+Project3/Project3.v12.suo
+ClientApp/P3/P3.v12.suo
+ClientApp/P3/P3/bin/
+ClientApp/P3/P3/obj/
+ClientApp/P3/packages/
+ClientApp/P3/P3.sln.GhostDoc.xml
+/ClientApp/P3/.vs/P3/v14/.suo

@@ -1,0 +1,28 @@
+﻿Scenario #1: A tool which has a reservation in the past.
+	-- Tool# 2
+	-- Reservation# 2
+	-- 3/1/16 - 3/3/16
+
+Scenario #2: A tool which has a reservation in the future.
+	-- Tool# 3
+	-- Reservation# 19
+	-- 5/1/16 - 5/3/16
+
+Scenario #3: A tool which has a reservation in the past AND a reservation in the future
+	-- Tool# 1
+	-- Reservation# 1
+	-- 1/1/16 - 1/5/16 
+
+	-- Tool# 1 (and Tool# 3)
+	-- Reservation# 4
+	-- 5/6/16 - 5/25/16 
+
+Scenario #4: A tool which has a reservation that spans a long period of time.
+	-- Tool# 7
+	-- Reservation# 20
+	-- 4/25/16 - 6/25/16 
+
+Scenario #5: A tool that 2+ service orders in the past (already completed and the tool is available for rent)
+	-- Service Order# 1 and 8
+	-- Tool# 7
+

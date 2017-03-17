@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="team55_dbDataSet" targetNamespace="http://tempuri.org/team55_dbDataSet.xsd" xmlns:mstns="http://tempuri.org/team55_dbDataSet.xsd" xmlns="http://tempuri.org/team55_dbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="connString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.P3.Properties.Settings.GlobalReference.Default.connString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="report1_procTableAdapter" GeneratorDataComponentClassName="report1_procTableAdapter" Name="report1_proc" UserDataComponentName="report1_procTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connString (Settings)" DbObjectName="`team55_db`.`report1_proc`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`team55_db`.`report1_proc`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tool_ID" DataSetColumn="Tool_ID" />
+              <Mapping SourceColumn="abbr_description" DataSetColumn="abbr_description" />
+              <Mapping SourceColumn="totalprofit" DataSetColumn="totalprofit" />
+              <Mapping SourceColumn="cost" DataSetColumn="cost" />
+              <Mapping SourceColumn="profit" DataSetColumn="profit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="report2_procTableAdapter" GeneratorDataComponentClassName="report2_procTableAdapter" Name="report2_proc" UserDataComponentName="report2_procTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connString (Settings)" DbObjectName="`team55_db`.`report2_proc`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`team55_db`.`report2_proc`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
+              <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="ordercounts" DataSetColumn="ordercounts" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="report3_procTableAdapter" GeneratorDataComponentClassName="report3_procTableAdapter" Name="report3_proc" UserDataComponentName="report3_procTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connString (Settings)" DbObjectName="`team55_db`.`report3_proc`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`team55_db`.`report3_proc`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="first_name" DataSetColumn="first_name" />
+              <Mapping SourceColumn="last_name" DataSetColumn="last_name" />
+              <Mapping SourceColumn="pickcount" DataSetColumn="pickcount" />
+              <Mapping SourceColumn="dropcount" DataSetColumn="dropcount" />
+              <Mapping SourceColumn="totalcount" DataSetColumn="totalcount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="team55_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="team55_dbDataSet" msprop:Generator_UserDSName="team55_dbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="report1_proc" msprop:Generator_TableClassName="report1_procDataTable" msprop:Generator_TableVarName="tablereport1_proc" msprop:Generator_RowChangedName="report1_procRowChanged" msprop:Generator_TablePropName="report1_proc" msprop:Generator_RowDeletingName="report1_procRowDeleting" msprop:Generator_RowChangingName="report1_procRowChanging" msprop:Generator_RowEvHandlerName="report1_procRowChangeEventHandler" msprop:Generator_RowDeletedName="report1_procRowDeleted" msprop:Generator_RowClassName="report1_procRow" msprop:Generator_UserTableName="report1_proc" msprop:Generator_RowEvArgName="report1_procRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tool_ID" msprop:Generator_ColumnVarNameInTable="columnTool_ID" msprop:Generator_ColumnPropNameInRow="Tool_ID" msprop:Generator_ColumnPropNameInTable="Tool_IDColumn" msprop:Generator_UserColumnName="Tool_ID" type="xs:int" />
+              <xs:element name="abbr_description" msprop:Generator_ColumnVarNameInTable="columnabbr_description" msprop:Generator_ColumnPropNameInRow="abbr_description" msprop:Generator_ColumnPropNameInTable="abbr_descriptionColumn" msprop:Generator_UserColumnName="abbr_description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="totalprofit" msprop:Generator_ColumnVarNameInTable="columntotalprofit" msprop:Generator_ColumnPropNameInRow="totalprofit" msprop:Generator_ColumnPropNameInTable="totalprofitColumn" msprop:Generator_UserColumnName="totalprofit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="profit" msprop:Generator_ColumnVarNameInTable="columnprofit" msprop:Generator_ColumnPropNameInRow="profit" msprop:Generator_ColumnPropNameInTable="profitColumn" msprop:Generator_UserColumnName="profit" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="report2_proc" msprop:Generator_TableClassName="report2_procDataTable" msprop:Generator_TableVarName="tablereport2_proc" msprop:Generator_RowChangedName="report2_procRowChanged" msprop:Generator_TablePropName="report2_proc" msprop:Generator_RowDeletingName="report2_procRowDeleting" msprop:Generator_RowChangingName="report2_procRowChanging" msprop:Generator_RowEvHandlerName="report2_procRowChangeEventHandler" msprop:Generator_RowDeletedName="report2_procRowDeleted" msprop:Generator_RowClassName="report2_procRow" msprop:Generator_UserTableName="report2_proc" msprop:Generator_RowEvArgName="report2_procRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_UserColumnName="first_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_UserColumnName="last_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ordercounts" msprop:Generator_ColumnVarNameInTable="columnordercounts" msprop:Generator_ColumnPropNameInRow="ordercounts" msprop:Generator_ColumnPropNameInTable="ordercountsColumn" msprop:Generator_UserColumnName="ordercounts" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="report3_proc" msprop:Generator_TableClassName="report3_procDataTable" msprop:Generator_TableVarName="tablereport3_proc" msprop:Generator_RowChangedName="report3_procRowChanged" msprop:Generator_TablePropName="report3_proc" msprop:Generator_RowDeletingName="report3_procRowDeleting" msprop:Generator_RowChangingName="report3_procRowChanging" msprop:Generator_RowEvHandlerName="report3_procRowChangeEventHandler" msprop:Generator_RowDeletedName="report3_procRowDeleted" msprop:Generator_RowClassName="report3_procRow" msprop:Generator_UserTableName="report3_proc" msprop:Generator_RowEvArgName="report3_procRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" msprop:Generator_UserColumnName="first_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" msprop:Generator_UserColumnName="last_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pickcount" msprop:Generator_ColumnVarNameInTable="columnpickcount" msprop:Generator_ColumnPropNameInRow="pickcount" msprop:Generator_ColumnPropNameInTable="pickcountColumn" msprop:Generator_UserColumnName="pickcount" type="xs:long" minOccurs="0" />
+              <xs:element name="dropcount" msprop:Generator_ColumnVarNameInTable="columndropcount" msprop:Generator_ColumnPropNameInRow="dropcount" msprop:Generator_ColumnPropNameInTable="dropcountColumn" msprop:Generator_UserColumnName="dropcount" type="xs:long" minOccurs="0" />
+              <xs:element name="totalcount" msprop:Generator_ColumnVarNameInTable="columntotalcount" msprop:Generator_ColumnPropNameInRow="totalcount" msprop:Generator_ColumnPropNameInTable="totalcountColumn" msprop:Generator_UserColumnName="totalcount" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
